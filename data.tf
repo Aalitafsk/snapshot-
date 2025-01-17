@@ -23,10 +23,12 @@ data "aws_subnets" "all_subnets" {
   }
 }
 
-# all the volumes in the subnet 
+# all the ec2 m/c's in the subnet 
 data "aws_instances" "example" {
   filter {
     name   = "subnet-id"
-    values = [data.aws_subnet.example.id]
+    values = [aws_subnets.all_subnets.id]
   }
 }
+
+# all the volumes of a ec2 m/c
