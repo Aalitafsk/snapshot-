@@ -1,5 +1,5 @@
 # Terraform script that takes snapshots of specific EC2 instance volumes
-
+/*
 resource "aws_ebs_snapshot" "example_snapshot" {
   volume_id    = aws_ebs_volume.example.id
   description  = "A description of what the snapshot is" 
@@ -11,3 +11,4 @@ resource "aws_ebs_snapshot" "example_snapshot" {
     Name = "HelloWorld_snap"
   }
 }
+*/

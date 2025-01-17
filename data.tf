@@ -24,7 +24,7 @@ data "aws_subnets" "all_subnets" {
 }
 
 # all the ec2 m/c's in the subnet 
-data "aws_instances" "example" {
+data "aws_instances" "all_instances_subnet" {
   filter {
     name   = "subnet-id"
     values = [aws_subnets.all_subnets.id]
