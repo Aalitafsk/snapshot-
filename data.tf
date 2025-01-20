@@ -32,4 +32,3 @@ data "aws_instances" "all_instances_subnet" {
 }
 
 # all the volumes of a ec2 m/c
-//
